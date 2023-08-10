@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Satisfy', cursive;
+}
+
+:root{
+    --primary-color:#FCD34D;    
+    --secondary-color:#60A5FA;    
+    --primary-lite:#FEF3C7;
+}
+body{
+    position: relative;
+}
+
+body::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(/img/minion.jpg) no-repeat center center/cover;
+    opacity:.5;
+    z-index: -1;
+}
+
+h1#main-heading{
+    font-size: 2.5rem;
+    text-align: center;
+    color:var(--secondary-color) ;
+    padding: 1rem;
+    background-color:var(--primary-color);
+    font-family: 'Satisfy', cursive;
+    border: 1px solid var(--secondary-color);
+}
+
+textarea{
+    height: 20vh;
+    width: 50vw;
+    display: block;
+    margin:1rem auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    background-color:var(--primary-lite);
+    outline: none;
+    border: 1px solid var(--secondary-color);
+}
+
+#btn-translate{
+    font-size: 1.6rem;
+    padding: .5rem 2rem;
+    color:var(--secondary-color);
+    background-color:var(--primary-color);
+    display: block;
+    margin: auto;
+    font-weight: bold;   
+    outline: none;
+    border:1px solid var(--secondary-color);
+    width:200px;
+    cursor: pointer;
+}
+
+#btn-translate:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+div#output-heading{
+    font-size: 1.5rem;
+    max-width: 50vw;
+    width: 100vw;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#outputBox{
+    height: 10vh;
+    width: 50vw;
+    display: block;
+    margin:auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    background-color:var(--primary-lite);
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    overflow: scroll;   
+}
+
+.about-minion{
+    margin:auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color:var(--primary-color);
+    /* color: var(--secondary-color); */
+    border: 1px solid var(--secondary-color);
+
+}
+
+
+@media screen and (max-width:550px) {
+    textarea, #outputBox{
+        width: 80vw;
+    }
+    
+    #btn-translate{
+        width:60vw ;
+        font-size:1.3rem ;
+    }
+}
+
